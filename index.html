@@ -1,4 +1,6 @@
-<html ng-app="app" ontouchmove=""><head>
+<!DOCTYPE html>
+<html ng-app="app" ontouchmove="">
+  <head>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
@@ -109,7 +111,7 @@ background-position:center 12%;
       <noscript>
 <h2>This site doesn't work without Javascript, you'll need to turn it on for this site</h2>
 </noscript>
-      <div id="myModal" class="modal" style="display: block;">
+      <div id="myModal" class="modal">
         <div class="modal-content">
           <h2 style="margin-top:0px">Welcome to the Medicare V
             certification</h2>
@@ -120,21 +122,30 @@ background-position:center 12%;
           </p>
           <p>
             <b>Date of Birth</b><br>
-            <input class="date-field" id="generate-dob-dd" size="4" placeholder="Day" type="text">
-            <input size="10" class="date-field" id="generate-dob-mm" placeholder="Month # (1-12)" type="text">
-            <input size="4" class="date-field" id="generate-dob-yy" placeholder="Year" type="text">
+            <input class="date-field" id="generate-dob-dd" size="4"
+              placeholder="Day" type="text">
+            <input size="10" class="date-field" id="generate-dob-mm"
+              placeholder="Month # (1-12)" type="text">
+            <input size="4" class="date-field" id="generate-dob-yy"
+              placeholder="Year" type="text">
           </p>
           <p>
             <b>Date of dose 1</b><br>
-            <input size="4" class="date-field" id="generate-dd1-dd" placeholder="Day" type="text">
-            <input size="10" class="date-field" id="generate-dd1-mm" placeholder="Month # (1-12)" type="text">
-            <input size="4" class="date-field" id="generate-dd1-yy" placeholder="Year" type="text">
+            <input size="4" class="date-field" id="generate-dd1-dd"
+              placeholder="Day" type="text">
+            <input size="10" class="date-field" id="generate-dd1-mm"
+              placeholder="Month # (1-12)" type="text">
+            <input size="4" class="date-field" id="generate-dd1-yy"
+              placeholder="Year" type="text">
           </p>
           <p>
             <b>Date of dose 2</b><br>
-            <input size="4" class="date-field" id="generate-dd2-dd" placeholder="Day" type="text">
-            <input size="10" class="date-field" id="generate-dd2-mm" placeholder="Month # (1-12)" type="text">
-            <input size="4" class="date-field" id="generate-dd2-yy" placeholder="Year" type="text">
+            <input size="4" class="date-field" id="generate-dd2-dd"
+              placeholder="Day" type="text">
+            <input size="10" class="date-field" id="generate-dd2-mm"
+              placeholder="Month # (1-12)" type="text">
+            <input size="4" class="date-field" id="generate-dd2-yy"
+              placeholder="Year" type="text">
           </p>
           <p>
             <b>Vaccine</b><br>
@@ -152,7 +163,8 @@ background-position:center 12%;
           <p>
             <b>IHI</b><br>
             this one is random or you can do your own<br>
-            <input value="8003855223602375" id="generate-ihi" type="text">
+            <input value="8003855223602375" id="generate-ihi"
+              type="text">
           </p>
           <p>
             <button id="generate-button">Generate</button>
@@ -190,16 +202,16 @@ background-position:center 12%;
         </div>
         <div class="bottomhalf">
           <div class="descriptor">NAME</div>
-          <div class="info" id="text-name">NULL </div>
+          <div class="info" id="text-name"></div>
           <br>
           <div class="descriptor">DATE OF BIRTH</div>
-          <div class="info" id="text-dateofbirth">undefined undefined undefined</div>
+          <div class="info" id="text-dateofbirth"></div>
           <br>
           <div class="validfrom">
             <div class="descriptor">VALID FROM</div>
-            <div class="info" id="text-validfrom">undefined undefined undefined</div>
+            <div class="info" id="text-validfrom"></div>
           </div>
-          <div class="clock" id="txt">27 Oct 2021 18:13:30</div>
+          <div class="clock" id="txt"></div>
         </div>
       </div>
       <div class="savebutton">Save offline</div>
@@ -209,21 +221,21 @@ background-position:center 12%;
         COVID-19 vaccinations.</b>
       <div class="bottom-details">
         <div class="bottom-descriptor">DOCUMENT NUMBER</div>
-        <div class="bottom-value" id="text-docnumber">undefined</div>
+        <div class="bottom-value" id="text-docnumber"></div>
       </div>
       <div class="bottom-details">
         <div class="bottom-descriptor">INDIVIDUAL HEALTHCARE IDENTIFIER
           (IHI)</div>
-        <div class="bottom-value" id="text-ihi">undefined</div>
+        <div class="bottom-value" id="text-ihi"></div>
       </div>
       <div class="bottom-details">
         <div class="bottom-descriptor">VACCINATIONS</div>
-        <div class="bottom-value" id="text-dose1">Spikevax Moderna COVID-19 Vaccine · undefined undefined undefined</div>
-        <div class="bottom-value" id="text-dose2">Spikevax Moderna COVID-19 Vaccine · undefined undefined undefined</div>
+        <div class="bottom-value" id="text-dose1"></div>
+        <div class="bottom-value" id="text-dose2"></div>
       </div>
       <div class="bottom-details">
         <div class="bottom-descriptor">LAST UPDATED</div>
-        <div class="bottom-value" id="text-updated">undefined undefined undefined</div>
+        <div class="bottom-value" id="text-updated"></div>
       </div>
       <div class="bottom-details">
         <div class="bottom-descriptor">DISCLAIMER</div>
@@ -364,6 +376,5 @@ generatebutton.onclick = function(){
 // Tidy and comment css
 
 </script>
-  
-
-</body></html>
+  </body>
+</html>
